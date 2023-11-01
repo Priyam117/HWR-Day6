@@ -1,25 +1,26 @@
 // Card.js
 import React from 'react';
 
-const Card = ({ backgroundColor }) => {
+const Card = ({card: {name, color, code}}) => {
   const cardStyle = {
-    backgroundColor: backgroundColor,
+    backgroundColor: color,
     width: '140px',
     height: '180px',
     margin: '10px',
     padding: '20px',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
     fontWeight: 'bold',
-
+    display: 'flex',
+    justifyContent: 'end',
+    alignItems: 'center',
+    flexDirection: 'column',
+    gap: '5px'
   };
 
 
   return (
     <div style={cardStyle}>
-      <p>{backgroundColor}</p>
-      <p>{}</p>
+      <p>{name}</p>
+      <p>{code}</p>
     </div>
   );
 };

@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 .App {
-  margin: 3rem 13rem;
+  margin: 3rem auto;
   display: flex;
   flex-wrap: wrap;
   padding: 1rem;
