@@ -3,9 +3,3 @@
   padding: 0;
   box-sizing: border-box;
 }
-.App {
-  margin: 3rem auto;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 1rem;
-}

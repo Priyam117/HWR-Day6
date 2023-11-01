@@ -1,7 +1,6 @@
-// Card.js
 import React from 'react';
 
-const Card = ({card: {name, color, code}}) => {
+const Card = ({ name, color, code }) => {
   const cardStyle = {
     backgroundColor: color,
     width: '140px',
@@ -10,12 +9,11 @@ const Card = ({card: {name, color, code}}) => {
     padding: '20px',
     fontWeight: 'bold',
     display: 'flex',
-    justifyContent: 'end',
+    justifyContent: 'end', // This should be 'flex-end'
     alignItems: 'center',
     flexDirection: 'column',
     gap: '5px'
   };
-
 
   return (
     <div style={cardStyle}>
